@@ -9,12 +9,6 @@ export interface Page {
   tokens: Token[];
 }
 
-export interface NewPage {
-  index: number;
-  value: string;
-  tokens: Token[];
-}
-
 export interface NewBook {
   id: number;
   pages: ContentInfo[];
