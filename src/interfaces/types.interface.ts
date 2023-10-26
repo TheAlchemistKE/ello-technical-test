@@ -1,5 +1,3 @@
-import { ContentInfo } from '../utils/convertPages';
-
 export interface Token {
   value: string;
   position: [number, number];
@@ -20,6 +18,18 @@ export interface NewPage {
 export interface NewBook {
   id: number;
   pages: ContentInfo[];
+}
+
+export interface PageItem {
+  value: string;
+  position: [number, number];
+}
+
+export interface ContentInfo {
+  index: number | null;
+  token: string | null;
+  content: string;
+  isTappable: boolean;
 }
 
 export interface CombinedContent {
