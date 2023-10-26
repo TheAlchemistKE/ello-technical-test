@@ -45,3 +45,10 @@ export interface Book {
   author: string;
   pages: Page[];
 }
+
+export interface TransformedWord {
+  index: number | null;
+  token: string | null;
+  content: string;
+  isTappable: boolean;
+}
