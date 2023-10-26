@@ -4,12 +4,15 @@ WORKDIR /app
 
 COPY package*.json ./
 
+
 RUN npm install
 
 COPY . .
 
 RUN npm run build
 
+COPY ./src/data/*.json ./dist/src/data/
+
 EXPOSE 4000
 
-CMD ["node", "./dist/src/server.js"]
+CMD [ "node", "./dist/src/server.js"]
