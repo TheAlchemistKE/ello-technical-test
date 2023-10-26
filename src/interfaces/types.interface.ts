@@ -26,13 +26,6 @@ export interface ContentInfo {
   isTappable: boolean;
 }
 
-export interface CombinedContent {
-  index: number | null;
-  token: string | null;
-  content: string;
-  isTappable: boolean;
-}
-
 export interface Book {
   id: number;
   title: string;
